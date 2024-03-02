@@ -58,16 +58,28 @@ $ pnpm run test:e2e
 $ pnpm run test:cov
 ```
 
-## Support
+## Command
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+nest-cli 提供的几个有用的命令
 
-## Stay in touch
+```bash
+# 语法
+# nest g [文件类型][文件名][文件目录]
+# Notice: 先创建 module 再创建其他
+nest g mo posts #表示 generate module posts
+nest g co posts # 表示 genereate controller posts
+nest g filter core/filter/http-exception
+nest g resource user #快速创建user的Controller, Service, Module, DTO
+```
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+## API Document
 
-## License
+[API Document](http://localhost:4000/docs)
 
-Nest is [MIT licensed](LICENSE).
+## Reference
+
+- [学完这篇 Nest.js 实战，还没入门的来锤我！](https://juejin.cn/post/7032079740982788132#heading-26)
+- [Nest.js 实战系列二-手把手带你-实现注册、扫码登录、jwt 认证等](https://juejin.cn/post/7044708915438682148)
+- [基于Nest.js+TypeORM实战系列3](https://juejin.cn/post/7142704416695517214)
+- [Blog github](https://github.com/koala-coding/nest-blog)
+
